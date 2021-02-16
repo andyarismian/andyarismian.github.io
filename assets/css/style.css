@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  background: #383e56;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.container .kartu-nama {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  margin-top: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .kartu-nama .nama {
+  padding: 45px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .kartu-nama .nama h4 {
+  color: #fff;
+  z-index: 1;
+}
+
+.bunga-bawah {
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  z-index: -999;
+}
+
+/* menu */
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  overflow-x: auto;
+  backdrop-filter: blur(5px);
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+  background-color: #eeeeee;
+}
+
+.nav__link--active {
+  color: #fff;
+}
+
+.nav__icon {
+  font-size: 18px;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .bunga-bawah {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+  }
+
+  .container .kartu-nama {
+    margin-top: 100px;
+  }
+}
