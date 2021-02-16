@@ -14,60 +14,6 @@ body {
   max-width: 100%;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  max-width: 100%;
-  flex-wrap: wrap;
-  z-index: 1;
-}
-
-.container .img-home-nama-kartu-background {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 100%;
-}
-
-.container .kartu-nama {
-  top: 235px;
-  right: 10px;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-}
-
-.container .kartu-nama .nama {
-  padding: 30px;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.container .kartu-nama .nama h5 {
-  color: #bf7864;
-  z-index: 1;
-}
-
-.bunga-bawah {
-  position: absolute;
-  bottom: 0;
-  left: 16%;
-  z-index: -999;
-}
-
 /* menu */
 .nav {
   position: fixed;
@@ -116,6 +62,121 @@ body {
   font-size: 18px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+/* home page */
+
+.container .img-home-nama-kartu-background {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.container .kartu-nama {
+  top: 235px;
+  right: 10px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .kartu-nama .nama {
+  padding: 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .kartu-nama .nama h5 {
+  color: #bf7864;
+  z-index: 1;
+}
+
+.bunga-bawah {
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  z-index: -999;
+}
+
+/* mempelai page */
+
+.img-kanan {
+  position: absolute;
+  left: 0;
+}
+
+.img-kiri {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container-mempelai {
+  position: relative;
+  margin-top: 60px;
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+.text-atas {
+  text-align: center;
+  color: #bf7864;
+}
+
+.text-atas .bismillah {
+  font-family: "Dancing Script", cursive;
+}
+
+.container-mempelai .data-mempelai {
+  margin: 30px;
+  text-align: center;
+  /* background-color: aqua; */
+}
+
+.container-mempelai .data-mempelai .ket-mempelai {
+  color: #bf7864;
+}
+
+.img-mempelai {
+  width: 50%;
+}
+
+.text-dengan {
+  margin: 0 auto;
+  font-family: "Dancing Script", cursive;
+  color: #bf7864;
+}
+
 /* mobile */
 @media only screen and (max-width: 600px) {
   .container .img-home-nama-kartu-background {
@@ -140,5 +201,40 @@ body {
     font-size: 1.4rem;
     color: #bf7864;
     z-index: 1;
+  }
+
+  .container-mempelai {
+    margin-top: 15px;
+  }
+
+  .text-atas .bismillah {
+    font-size: 1.6rem;
+    margin-top: 5px;
+  }
+
+  .text-atas h6 {
+    font-size: 0.7rem;
+  }
+
+  .container-mempelai .data-mempelai {
+    margin: 10px;
+    text-align: center;
+    /* background-color: aqua; */
+  }
+
+  .container-mempelai .data-mempelai .ket-mempelai h5 {
+    font-size: 0.9rem;
+  }
+
+  .container-mempelai .data-mempelai .ket-mempelai h6 {
+    font-size: 0.8rem;
+  }
+
+  .img-mempelai {
+    width: 40%;
+  }
+
+  .text-dengan {
+    font-size: 1.6rem;
   }
 }
