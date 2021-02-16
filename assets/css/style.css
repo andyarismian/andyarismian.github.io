@@ -123,6 +123,7 @@ body {
 .img-kanan {
   position: absolute;
   left: 0;
+  z-index: -1;
 }
 
 .img-kiri {
@@ -177,8 +178,80 @@ body {
   color: #bf7864;
 }
 
+.text-dengan {
+  margin-bottom: 70px;
+}
+
+/* acara */
+.container-acara {
+  position: relative;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.card-acara {
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+.text-judul-acara h1 {
+  z-index: 9;
+}
+
+.text-judul-acara h1 {
+  font-family: "Dancing Script", cursive;
+  color: #bf7864;
+  margin-top: 60px;
+  z-index: 9;
+}
+
+.judul-card-acara {
+  color: #bf7864;
+  margin-top: 5px;
+}
+.card-acara h5 {
+  color: #bf7864;
+}
+
+/* page tempat */
+
+.container-tempat {
+  position: relative;
+  width: 90%;
+  margin-top: 60px;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  z-index: 99;
+}
+
 /* mobile */
 @media only screen and (max-width: 600px) {
+  /* home */
   .container .img-home-nama-kartu-background {
     top: 290px;
     height: 80%;
@@ -203,8 +276,9 @@ body {
     z-index: 1;
   }
 
+  /* page mempelai  */
   .container-mempelai {
-    margin-top: 15px;
+    margin-top: 1rem;
   }
 
   .text-atas .bismillah {
@@ -236,5 +310,20 @@ body {
 
   .text-dengan {
     font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  /* page acara */
+  .akad {
+    margin-top: 20px;
+  }
+
+  .text-judul-acara h1 {
+    margin-top: 1rem;
+  }
+
+  /* page tampat */
+  .container-tempat {
+    margin-top: 1rem;
   }
 }
