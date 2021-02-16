@@ -107,8 +107,9 @@ body {
 }
 
 .nav__link--active {
-  color: #bf7864;
-  background-color: #fff;
+  background-color: #bf7864;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav__icon {
