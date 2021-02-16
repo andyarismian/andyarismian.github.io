@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #383e56;
+  background: #efe7df;
   max-height: 100vh;
   max-width: 100%;
 }
@@ -23,14 +23,23 @@ body {
   margin-top: 50px;
 }
 
+.container .img-home-nama-kartu-background {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
 .container .kartu-nama {
+  bottom: 15px;
+  right: 10px;
   position: relative;
-  width: 400px;
+  width: 250px;
   height: 200px;
-  margin-top: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  margin-top: 200px;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -45,8 +54,8 @@ body {
   transition: 0.5s;
 }
 
-.container .kartu-nama .nama h4 {
-  color: #fff;
+.container .kartu-nama .nama h5 {
+  color: #bf7864;
   z-index: 1;
 }
 
@@ -68,6 +77,7 @@ body {
   display: flex;
   overflow-x: auto;
   backdrop-filter: blur(5px);
+  z-index: 2;
 }
 
 .nav__link {
@@ -81,18 +91,22 @@ body {
   white-space: nowrap;
   font-family: sans-serif;
   font-size: 13px;
-  color: #fff;
+  color: #bf7864;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   transition: background-color 0.1s ease-in-out;
+  text-decoration: none;
 }
 
 .nav__link:hover {
-  background-color: #eeeeee;
+  background-color: #bf7864;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav__link--active {
-  color: #fff;
+  color: #bf7864;
+  background-color: #fff;
 }
 
 .nav__icon {
@@ -101,14 +115,12 @@ body {
 
 /* mobile */
 @media only screen and (max-width: 600px) {
-  .bunga-bawah {
+  .container .img-home-nama-kartu-background {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -999;
+    height: 80%;
+    top: 60px;
   }
-
   .container .kartu-nama {
-    margin-top: 100px;
+    top: 25px;
   }
 }
