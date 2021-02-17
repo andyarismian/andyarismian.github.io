@@ -125,7 +125,7 @@ body {
   z-index: -999;
 }
 
-/* mempelai page */
+/* page mempelai */
 
 .img-kanan {
   position: absolute;
@@ -142,7 +142,7 @@ body {
 .container-mempelai {
   position: relative;
   margin-top: 60px;
-  width: 88%;
+  width: 100%;
   -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
