@@ -192,7 +192,7 @@ body {
 /* acara */
 .container-acara {
   position: relative;
-  width: 88%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -311,7 +311,7 @@ body {
   }
 
   .text-atas h6 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .container-mempelai .data-mempelai {
@@ -338,16 +338,24 @@ body {
   }
 
   /* page acara */
+  .container-acara {
+    margin-top: 10px;
+  }
   .akad {
     margin-top: 20px;
   }
 
   .text-judul-acara h1 {
-    margin-top: 1rem;
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
   }
 
   .data-mempelai {
-    margin-top: 0;
+    margin-top: 0px;
+  }
+
+  .judul-card-acara {
+    font-size: 1.3rem;
   }
 
   /* page tampat */
