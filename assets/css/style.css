@@ -320,6 +320,11 @@ body {
     /* background-color: aqua; */
   }
 
+  .nama-mempelai {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6rem !important;
+  }
+
   .container-mempelai .data-mempelai .ket-mempelai h5 {
     font-size: 0.9rem;
   }
