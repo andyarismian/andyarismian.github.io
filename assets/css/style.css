@@ -10,7 +10,7 @@
 
 body {
   background: #efe7df;
-  max-height: 100vh;
+  min-height: 100vh;
   max-width: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 60px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   overflow-x: auto;
@@ -69,8 +69,60 @@ body {
   max-width: 100%;
   flex-wrap: wrap;
   z-index: 1;
+  padding-bottom: 690px !important;
 }
 
+/* safety */
+
+.modal-safety {
+  position: fixed;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  z-index: 99999;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 15px;
+  color: #bf7864;
+}
+
+.modal-safety:hover span {
+  font-weight: bold;
+}
+
+.modal-safety :active {
+  font-weight: bold;
+  border: none;
+}
+
+.safety-card {
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 0.6em;
+}
+
+.modal-title {
+  color: #bf7864;
+}
+
+.text-color {
+  color: #bf7864;
+}
 /* home page */
 
 .container .img-home-nama-kartu-background {
@@ -79,7 +131,7 @@ body {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 89%;
+  min-height: 100%;
 }
 
 .container .kartu-nama {
@@ -127,6 +179,10 @@ body {
 
 /* page mempelai */
 
+.andy {
+  transform: rotate(-70deg);
+}
+
 .img-kanan {
   position: absolute;
   left: 0;
@@ -159,6 +215,11 @@ body {
 .text-atas {
   text-align: center;
   color: #bf7864;
+}
+
+.nama-mempelai {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 1.6rem !important;
 }
 
 .text-atas .bismillah {
@@ -224,6 +285,10 @@ body {
 .judul-card-acara {
   color: #bf7864;
   margin-top: 5px;
+}
+
+.judul-card-acara-detail {
+  color: #bf7864;
 }
 
 .card-acara h5 {
@@ -321,7 +386,7 @@ body {
   }
 
   .nama-mempelai {
-    font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", cursive !important;
     font-size: 1.6rem !important;
   }
 
@@ -361,6 +426,10 @@ body {
 
   .judul-card-acara {
     font-size: 1.3rem;
+  }
+
+  .judul-card-acara-detail {
+    font-size: 0.9rem;
   }
 
   /* page tampat */
